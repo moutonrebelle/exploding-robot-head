@@ -14,11 +14,19 @@ body {
 }
 
 .banner {
+  display: block;
   background-color: #2b3851;
+  position: relative;
+  z-index: 1;
 }
 
 .robot {
   width: 320px;
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .robot-body {
