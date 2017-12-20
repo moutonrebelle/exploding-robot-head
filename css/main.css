@@ -17,6 +17,7 @@ body {
   background-color: #2b3851;
   position: relative;
   z-index: 1;
+  padding-bottom: 2rem;
 }
 
 .robot {
@@ -43,10 +44,49 @@ body {
   z-index: 3;
   transform: translateX(-50%);
   left: 50%;
+  top: 60px;
+}
+
+.robot-brain:hover {
+  display: inline-block;
+  width: 46px;
+  position: absolute;
+  z-index: 3;
+  transform: translateX(-50%);
+  left: 50%;
   top: 40px;
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
+  z-index: 4;
+}
+
+.robot-head-right {
+  display: inline-block;
+  position: absolute;
+  left: 69%;
+  transform: translateX(-50%);
+  top: 17px;
+}
+
+.robot-head-left {
+  display: inline-block;
+  position: absolute;
+  right: 69%;
+  transform: translateX(50%);
+  top: 17px;
+}
+
+.robot-head-left:hover {
+  right: 80%;
+  transform: translateX(50%);
+  top: 17px;
+}
+
+.robot-head-right:hover {
+  left: 80%;
+  transform: translateX(-50%);
+  top: 17px;
 }
